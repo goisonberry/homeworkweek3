@@ -30,10 +30,21 @@ function generatePassword() {
     alert("Cannot generate password.");
   }
 
+  // If Employee types a number between 8 and 128. Moves on to next next prompt.
+  if (passwordLength > 7 && passwordLength < 129) {
+    var lowercaseChar = confirm(
+      "Do you want any lowercase characters in your password?"
+    );
+  }
+
   // Employee typed a number less than 8
-
+  else if (passwordLength < 8) {
+    alert("need at least 8");
+  }
   // Employee types a number greater than 128
-
+  else if (passwordLength > 128) {
+    alert("need less than 129");
+  }
   // Employee did not type in a number
 
   // Employee did not type anything
