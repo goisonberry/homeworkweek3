@@ -1,13 +1,6 @@
 // Assignment Code
 // var generateBtn = document.querySelector("#generate");
-// Confirming if Employee woul d like to generate a password.
-// var generatePassword = confirm("Would you like to generate a password?");
-// Alerts Employee that they will need to select a password length.
-// alert("You will need to select the length of your password.");
-// Prompts Employee choose the number of characters.
-// var passwordLength = prompt(
-//  "Choose how long you want your password to be. Choose between 8 to 128 characters."
-// );
+
 // Alerts Employee that they will need to choose at least one type of character
 // alert(
 //  "You will need to select at least one lowercase, uppercase, numbers or special characters."
@@ -21,8 +14,29 @@
 // Confirm with employee if they would like special characters.
 // var specialChar = confirm("Would you like to have special characters?");
 
+// Allows button to prompt password generator, not webpage loading.
 function generatePassword() {
-  alert("This Works");
+  // Asking employee if they would like to generate a password.
+  var generatePassword = confirm("Would you like to generate a password?");
+  // If "true", the funtion will ask to choose 8 to 128 characters.
+  if (generatePassword === true) {
+    // Employee selects the total number of characters they wish to have
+    var passwordLength = prompt(
+      "Please choose the number of characters you wish your password to be. Password needs to be between 8 to 128 characters."
+    );
+  }
+  // If not true, the prompts end.
+  else {
+    alert("Cannot generate password.");
+  }
+
+  // Employee typed a number less than 8
+
+  // Employee types a number greater than 128
+
+  // Employee did not type in a number
+
+  // Employee did not type anything
 }
 
 // Write password to the #password input
