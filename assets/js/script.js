@@ -49,7 +49,7 @@ function writePassword() {
         while (charCheck == true) {
           // Employee is asked if they want lowercase characters in their password. Function needs to remember Employee's choice.
           var lowercaseChar = confirm(
-            "Do you want any lowercase characters in your password?"
+            "Would you want any lowercase characters in your password?"
           );
 
           // Employee is asked if they would like uppercase characters in their password. Funtion needs to remember Employee's choice.
